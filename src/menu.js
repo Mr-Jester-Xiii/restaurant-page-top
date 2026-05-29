@@ -57,12 +57,11 @@ function renderMenu() {
     gridRows.push(menuData.slice(i, i + gridWidth));
   }
 
-  gridRows.forEach((gridRow) => {
     const row = Object.assign(document.createElement("div"), {
       className: "row",
     });
 
-    gridRow.forEach((item) => {
+    menuData.forEach((item) => {
       const col = Object.assign(document.createElement("div"), {
         className: "col",
       });
@@ -108,7 +107,6 @@ function renderMenu() {
       card.appendChild(cardBody);
       col.appendChild(card);
       row.appendChild(col);
-    });
     container.appendChild(row);
   });
 }
