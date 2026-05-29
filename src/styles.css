@@ -1,3 +1,10 @@
+h1 {
+   font-size: 100px;
+   font-weight: normal;
+   letter-spacing: -6.5px;
+   overflow-wrap: break-world;
+}
+
 .nav-items {
     list-style-type: none;
 }
@@ -9,5 +16,9 @@
 }
 
 .nav-item:hover {
+    text-decoration: underline solid orange 4px;
+}
+
+.selected {
     text-decoration: underline solid orange 4px;
 }

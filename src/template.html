@@ -16,67 +16,61 @@
       <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom">
           <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-            <div class="container-fluid py-5">Logo</div>
+            <div class="container-fluid py-5">
+              <h1>🍔 Burger Bar</h1>
+            </div>
           </div>
           <nav>
             <ul class="nav-items d-flex flex-row mb-3">
               <li>
-                <a class="nav-item me-5" role="button">Home</a>
+                <a class="nav-item me-5" role="button" id="homeBtn">Home</a>
               </li>
               <li>
-                <a class="nav-item me-5" role="button">Menu</a>
+                <a class="nav-item me-5" role="button" id="menuBtn">Menu</a>
               </li>
               <li>
-                <a class="nav-item me-5" role="button">Book</a>
-              </li>
-              <li>
-                <a class="nav-item me-5" role="button">About</a>
+                <a class="nav-item me-5" role="button" id="bookBtn">Book</a>
               </li>
             </ul>
           </nav>
         </header>
-        <div class="container">
+        <div class="container" id="content">
           <div class="row">
             <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="Item Image" />
-                <div class="card-body">
-                  <h5 class="card-title">Item name</h5>
-                  <p class="card-text">
-                    Item Description
-                  </p>
-                  <h5 class="border-top">
-                    £XX.XX
-                  </h5>
-                </div>
+              <h2>Book a table with us!</h2>
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" id="nameInput" class="form-control w-25" />
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="Item Image" />
-                <div class="card-body">
-                  <h5 class="card-title">Item name</h5>
-                  <p class="card-text">
-                    Item Description
-                  </p>
-                  <h5 class="border-top">
-                    £XX.XX
-                  </h5>
-                </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control w-25"
+                  id="emailInput"
+                  placeholder="name@example.com"
+                />
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="Item Image" />
-                <div class="card-body">
-                  <h5 class="card-title">Item name</h5>
-                  <p class="card-text">
-                    Item Description
-                  </p>
-                  <h5 class="border-top">
-                    £XX.XX
-                  </h5>
-                </div>
+              <div class="mb-3">
+                <label for="numberInput" class="form-label">Number of people</label>
+                <select id="numberInput" class="form-select w-auto">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="reqInput" class="form-label"
+                  >Additional requirements</label
+                >
+                <textarea
+                  class="form-control w-50"
+                  id="reqInput"
+                ></textarea>
+                <button class="btn btn-primary mt-5">Book</button>
               </div>
             </div>
           </div>
